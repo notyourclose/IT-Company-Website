@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    body{
+      background:#f7f9fb;
+      color:#1e1e1e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .details-page{
+      max-width:1100px;
+      margin:0 auto;
+      padding:40px 20px 80px 20px;
+    }
+    .details-page h1{
+      font-size:32px;
+      margin-bottom:10px;
+      text-align:center;
+    }
+    .details-page p.lead{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:18px;
+      color:#444;
+    }
+    .back-link{
+      display:inline-block;
+      margin-bottom:20px;
+      color:#2b6777;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .back-link:hover{
+      text-decoration:underline;
+    }
+    .details-card{
+      background:#fff;
+      border-radius:16px;
+      padding:20px;
+      margin-bottom:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    }
+    .details-card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:15px;
+      display:block;
+    }
+    .details-card h2{
+      margin:10px 0;
+      font-size:24px;
+    }
+    .details-card p{
+      font-size:16px;
+      line-height:24px;
+      color:#333;
+      margin:0;
+    }
+    .visit-btn{
+      --btn1:#2b6777;
+      --btn2:#52ab98;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin-top:14px;
+      padding:12px 18px;
+      border-radius:999px;
+      background:linear-gradient(135deg, #1f5160 0%, var(--btn1) 35%, var(--btn2) 100%);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      letter-spacing:.2px;
+      border:1px solid rgba(255,255,255,.22);
+      position:relative;
+      overflow:hidden;
+      box-shadow:
+        0 10px 22px rgba(43,103,119,.22),
+        0 2px 0 rgba(255,255,255,.10) inset;
+      transition:transform .18s ease, box-shadow .18s ease, filter .18s ease, border-color .18s ease;
+      -webkit-font-smoothing:antialiased;
+    }
+    .visit-btn::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:linear-gradient(110deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.22) 35%, rgba(255,255,255,0) 70%);
+      transform:translateX(-120%);
+      transition:transform .6s ease;
+      pointer-events:none;
+    }
+    .visit-btn:hover{
+      color:#fff;
+      text-decoration:none;
+      transform:translateY(-1px);
+      box-shadow:0 14px 28px rgba(43,103,119,.28);
+      filter:saturate(1.05);
+      border-color:rgba(255,255,255,.30);
+    }
+    .visit-btn:hover::before{
+      transform:translateX(120%);
+    }
+    .visit-btn:active{
+      transform:translateY(0);
+      box-shadow:0 10px 22px rgba(43,103,119,.22);
+    }
+    .visit-btn:focus-visible{
+      outline:none;
+      box-shadow:0 0 0 4px rgba(82,171,152,.22), 0 14px 28px rgba(43,103,119,.28);
+    }
+    .visit-btn .icon{
+      display:inline-flex;
+      width:18px;
+      height:18px;
+      border-radius:50%;
+      background:rgba(255,255,255,.16);
+      align-items:center;
+      justify-content:center;
+      line-height:1;
+      font-size:12px;
+      box-shadow:0 1px 0 rgba(255,255,255,.14) inset;
+    }
+    .visit-btn:hover .icon{
+      transform:translateX(1px);
+      transition:transform .18s ease;
+    }
+    .visit-btn.is-disabled{
+      opacity:.55;
+      filter:grayscale(.1);
+      cursor:not-allowed;
+      pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+  <div class="details-page">
+    <a class="back-link" href="index.html#service">&#8592; Back to services</a>
+    <h1>Project Details</h1>
+    <p class="lead">Explore each project and our Web App Development offering.</p>
+
+    <div id="web-app-development" class="details-card">
+      <img src="./our service images/Screenshot (561).png" alt="Web App Development">
+      <h2>Web App Development</h2>
+      <p>Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
+      <a class="visit-btn" href="https://notyourclose.github.io/spotify-clone/" target="_blank" rel="noopener noreferrer">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-1" class="details-card">
+      <img src="./our service images/Screenshot (562).png" alt="Project 1">
+      <h2>Project-1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn" href="https://notyourclose.github.io/kavishka-dileepa-portfolio-02/" target="_blank" rel="noopener noreferrer">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-2" class="details-card">
+      <img src="./our service images/Screenshot (563).png" alt="Project 2">
+      <h2>Project-2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn is-disabled" href="#" aria-disabled="true">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-3" class="details-card">
+      <img src="./our service images/Screenshot (564).png" alt="Project 3">
+      <h2>Project-3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn" href="https://notyourclose.github.io/dileepa-madushan-dilu-beats/" target="_blank" rel="noopener noreferrer">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-4" class="details-card">
+      <img src="./our service images/Screenshot 2026-01-28 134739.png" alt="Project 4">
+      <h2>Project-4</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn" href="https://notyourclose.github.io/burger/" target="_blank" rel="noopener noreferrer">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-5" class="details-card">
+      <img src="./our service images/Screenshot (561).png" alt="Project 5">
+      <h2>Project-5</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn is-disabled" href="#" aria-disabled="true">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+
+    <div id="project-6" class="details-card">
+      <img src="./our service images/Screenshot (563).png" alt="Project 6">
+      <h2>Project-6</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+      <a class="visit-btn is-disabled" href="#" aria-disabled="true">
+        <span class="icon">&#8599;</span>
+        Visit live site
+      </a>
+    </div>
+  </div>
+</body>
+</html>
